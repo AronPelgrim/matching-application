@@ -1,14 +1,7 @@
-const express = require('express')
+const express = require('express');
+const app = express();
+const PORT = 3000;
 
-express()
-    .get('/', onhome)
-    .get('/about', onabout)
-    .listen(1900)
+app.use(express.static('public'));
 
-function onhome(req, res) {
-    res.send('<h1>Hello World!</h1>\n')
-}
-
-function onabout(req, res) {
-    res.send('<h1>About me</h1>\n')
-}
+app.listen(PORT);
