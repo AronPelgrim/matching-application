@@ -3,8 +3,7 @@ const app = express();
 const PORT = 3000;
 const ejs = require('ejs');
 
-app.use('/css', express.static(__dirname + 'public/css'))
-app.use('/js', express.static(__dirname + 'public/js'))
+app.use(express.static('public'))
 
 app.set('views', './views')
 app.set('view engine', 'ejs')
