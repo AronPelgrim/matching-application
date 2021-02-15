@@ -5,7 +5,7 @@ const ejs = require('ejs');
 
 app.use(express.static('public'))
 
-app.set('views', './views')
+app.set('views', './views/pages')
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
