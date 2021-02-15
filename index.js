@@ -12,4 +12,8 @@ app.get('', (req, res) => {
   res.render('index.ejs')
 })
 
+app.use(function (req, res, next) {
+  res.status(404).send("Sorry, deze pagina bestaat niet");
+});
+
 app.listen(PORT);
