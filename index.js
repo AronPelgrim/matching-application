@@ -12,11 +12,11 @@ app.set('views', './views/pages')
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
-  res.render('index.ejs')
+  res.render('index')
 })
 
 app.get('/matching', (req, res) => {
-  res.render('matching.ejs')
+  res.render('matching')
 })
 
 app.post('/index', urlencodedParser, (req, res) => {
