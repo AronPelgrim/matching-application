@@ -19,9 +19,9 @@ app.get('/matching', (req, res) => {
   res.render('matching.ejs')
 })
 
-app.post('/index', urlencodedParser, (req, res) => {
+app.post('/selection', urlencodedParser, (req, res) => {
   console.log(req.body)
-  res.render('index')
+  res.render('result')
 })
 
 app.use(function (req, res, next) {
