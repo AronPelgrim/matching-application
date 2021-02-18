@@ -29,3 +29,4 @@ app.use(function (req, res, next) {
 });
 
 app.listen(PORT);
+//.env install in gitignore
