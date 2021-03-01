@@ -1,5 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+require('dotenv/config');
 
 const app = express();
 const PORT = 3000;
@@ -28,5 +30,7 @@ app.post('/selection', urlencodedParser, (req, res) => {
 app.use((req, res) => {
         res.status(404).send('Sorry, deze pagina bestaat niet');
 });
+
+mongoose.connect(process.env.DB_CONNECTION, () => console.log('connected to db'));
 
 app.listen(PORT);
