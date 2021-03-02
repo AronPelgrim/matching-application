@@ -3,15 +3,37 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    display: flex;
+    width: 100vw;
+    padding: 5px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: #092635;
+}
+
+header h1{
+    padding: 0 20px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
 nav ul {
     display: flex;
     width: 100vw;
-    padding: 15px 0;
+    padding: 10px 0;
     position: fixed;
     right: 0;
     bottom: -2vh;
     left: 0;
-    background-color: #5F7C8A;
+    background-color: #092635;
 }
 
 nav li {
@@ -21,9 +43,9 @@ nav li {
 }
 
 nav li a {
-    padding: 0 25px;
-    color: black;
-    font-size: 1.2em;
+    padding: 0 28px;
+    color: white;
+    font-size: clamp(0.7em, 3vw, 1.1em);
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
@@ -32,14 +54,14 @@ nav li a {
 }
 
 section:nth-of-type(1) {
-    width: 80vw;
     letter-spacing: 0.097em;
+    padding-left: 4.2vw;
 }
 section:nth-of-type(1) h1 {
-    font-size: 1.3em;
-    text-transform: uppercase;
+    font-size: 1.1em;
+    text-transform: capitalize;
     margin-bottom: 2vh;
-    margin-top: 13vh;
+    margin-top: 15vh;
     text-align: left;
     color: black;
 }
@@ -47,23 +69,23 @@ section:nth-of-type(1) h1 {
 input[type=text],
 select,
 textarea {
-    width: 100%;
+    width: 80vw;
     padding: 12px;
     border: 1px solid black;
     margin: 2% 0 5% 0;
+    border-radius: 10px;
 }
 
 input[type=submit] {
     position: absolute;
-    background-color: black;
+    background-color: #3D70B6;
     color: white;
     padding: 10px 45px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
-    font-weight: bold;
     font-size: 1em;
-    bottom: 12vh;
+    bottom: 10vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }

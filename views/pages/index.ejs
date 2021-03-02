@@ -9,13 +9,13 @@
         <title>Document</title>
     </head>
     <body>
-        <header></header>
+        <header><%- include('../partials/header') %></header>
         <main>
             <section>
                 <h1>Favoriete nummers</h1>
                 <form method="POST" action="/selection">
                     <input type="text" name="nummers" required />
-                    <input type="submit" value="submit" />
+                    <input type="submit" value="Opslaan" />
                 </form>
             </section>
             <footer>
