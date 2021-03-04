@@ -32,6 +32,21 @@ app.get('/nieuwNummer', (req, res) => {
         nummer.save();
 });
 
+app.get('/alleNummers', (req, res) => {
+        Nummers.find()
+                .then((result) => {
+                        res.send(result);
+                })
+                .catch((err) => {
+                        console.log(err);
+                });
+});
+
+app.post('/selection', urlencodedParser, (req, res) => {
+        console.log(req.body);
+        res.render('result');
+});
+
 app.post('/selection', urlencodedParser, (req, res) => {
         console.log(req.body);
         res.render('result');
