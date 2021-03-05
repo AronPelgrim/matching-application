@@ -9,7 +9,9 @@ require('dotenv/config');
 
 const Nummers = require('./models/nummers');
 
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
@@ -24,12 +26,11 @@ app.get('/matching', (req, res) => {
         res.render('matching.ejs');
 });
 
-app.get('/nieuwNummer', (req, res) => {
-        const nummer = new Nummers({
-                title: 'beethovenstuff',
-                artist: 'frans bouwer',
+app.post('/index', (req, res) => {
+        const nummer = new Nummers(req.body);
+        nummer.save().then((result) => {
+                res.redirect('/');
         });
-        nummer.save();
 });
 
 app.get('/alleNummers', (req, res) => {
@@ -40,16 +41,6 @@ app.get('/alleNummers', (req, res) => {
                 .catch((err) => {
                         console.log(err);
                 });
-});
-
-app.post('/selection', urlencodedParser, (req, res) => {
-        console.log(req.body);
-        res.render('result');
-});
-
-app.post('/selection', urlencodedParser, (req, res) => {
-        console.log(req.body);
-        res.render('result');
 });
 
 app.use((req, res) => {
