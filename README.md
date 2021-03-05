@@ -16,7 +16,7 @@ npm install
 ## Server
 Run deze command en start de server op 
  ``` 
- node index.js 
+ npm start 
  ```
  
  Nu draait de server op localhost:3000
