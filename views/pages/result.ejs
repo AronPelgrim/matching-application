@@ -10,10 +10,14 @@
     </head>
     <body>
         <header><%- include('../partials/header') %></header>
-        <main>
-            <section><% for(let i=0; i < Nummers.length; i++) { %>
+        <main id = "result">
+            <section>
+                <h1>Jouw favorieten</h1>
+                <% for(let i=0; i < Nummers.length; i++) { %>
                   <h2><%= Nummers[i].title %></h2>
                   <p><%= Nummers[i].artist %></p>
+                  <a class="Delete">Delete</a>
+                  <a class="Edit">Edit</a>
              <% } %></section>
             <footer>
                 <%- include('../partials/footer') %>

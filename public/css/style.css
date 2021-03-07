@@ -12,6 +12,7 @@ header {
     top: 0;
     left: 0;
     background-color: #092635;
+    z-index: 1;
 }
 
 header h1{
@@ -31,7 +32,7 @@ nav ul {
     padding: 10px 0;
     position: fixed;
     right: 0;
-    bottom: -2vh;
+    bottom: -2.4vh;
     left: 0;
     background-color: #092635;
 }
@@ -58,8 +59,8 @@ section:nth-of-type(1) {
     padding: 0 4.2vw 0 4.2vw;
 }
 
-section:nth-of-type(1) h1 {
-    font-size: 1.1em;
+#index section:nth-of-type(1) h1 {
+    font-size: 1.4em;
     text-transform: capitalize;
     margin-bottom: 2vh;
     margin-top: 15vh;
@@ -67,21 +68,7 @@ section:nth-of-type(1) h1 {
     color: black;
 }
 
-section:nth-of-type(1) h2:first-of-type {
-    margin-top: 12vh;
-}
-
-section:nth-of-type(1) h2 {
-    font-size: 1em;
-}
-
-section:nth-of-type(1) p { 
-    font-size: 0.90em;
-    opacity: 0.70;
-    margin: -1.5vh 0 5vh 0;
-}
-
-input[type=text],
+#index input[type=text],
 select,
 textarea {
     width: 80vw;
@@ -91,7 +78,7 @@ textarea {
     border-radius: 10px;
 }
 
-input[type=submit] {
+#index input[type=submit] {
     position: absolute;
     background-color: #3D70B6;
     color: white;
@@ -104,4 +91,49 @@ input[type=submit] {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#result section:nth-of-type(1) h1 {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    margin-bottom: 0vh;
+    margin-top: 15vh;
+    text-align: center;
+    color: black;
+}
+
+#result section:nth-of-type(1) h2:first-of-type {
+    margin-top: 7vh;
+}
+
+#result section:nth-of-type(1) h2 {
+    font-size: 1em;
+}
+
+#result section:nth-of-type(1) p { 
+    font-size: 0.90em;
+    opacity: 0.70;
+    margin: -1.5vh 0 5vh 0;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid black;
+}
+
+#result section:nth-of-type(1) a:last-of-type { 
+    padding-bottom: 12vh;
+}
+
+#result section:nth-of-type(1) .Delete { 
+    position: absolute;
+    right: 5vw;
+    margin-top: -10vh;
+    color: red;
+}
+
+#result section:nth-of-type(1) .Edit { 
+    position: absolute;
+    right: 27vw;
+    margin-top: -10vh;
+    color: green;
+}
+
+
  
