@@ -12,8 +12,8 @@
         <header><%- include('../partials/header') %></header>
         <main>
             <section><% for(let i=0; i < Nummers.length; i++) { %>
-                  <h1><%= Nummers[i].title %></h1>
-                  <h1><%= Nummers[i].artist %></h1>
+                  <h2><%= Nummers[i].title %></h2>
+                  <p><%= Nummers[i].artist %></p>
              <% } %></section>
             <footer>
                 <%- include('../partials/footer') %>
