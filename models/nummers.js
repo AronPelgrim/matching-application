@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 
-const Schemax = mongoose.Schema;
+//Schema verwijst naar een MongoDB-verzameling
+const SchemaNummers = mongoose.Schema;
 
-const nummerSchema = new Schemax(
+//Dataschema voor de database
+const nummerSchema = new SchemaNummers(
         {
                 title: {
                         type: String,
@@ -16,9 +18,9 @@ const nummerSchema = new Schemax(
                         type: String,
                         required: true,
                 },
-        },
-        { timestamps: true }
+        }
 );
 
+//Definieer een model met collectie naam en Schema
 const Nummers = mongoose.model('nummers', nummerSchema);
 module.exports = Nummers;
