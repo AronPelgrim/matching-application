@@ -16,8 +16,10 @@
                 <% for(let i=0; i < Nummers.length; i++) { %>
                   <h2><%= Nummers[i].title %></h2>
                   <p><%= Nummers[i].artist %></p>
-                  <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">Delete</a>
-             <% } %></section>
+                  <p><%= Nummers[i].genre %></p>
+                  <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">	💔</a>
+             <% } %>
+            </section>
             <footer>
                 <%- include('../partials/footer') %>
             </footer>
