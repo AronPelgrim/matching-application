@@ -23,6 +23,12 @@ router.get('/result', (req, res) => {
         });
 });
 
+router.get('/result/:id/delete', (req, res) => {
+        Nummers.findByIdAndDelete(req.params.id).then((result) => {
+                res.redirect('/result');
+        });
+});
+
 router.post('/index', (req, res) => {
         const nummer = new Nummers(req.body);
         nummer.save().then((result) => {
