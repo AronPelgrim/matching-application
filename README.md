@@ -6,7 +6,7 @@ Welcome to my repository! Here you can find my feauture, created for a matching 
 -   [Installation guide](#installation-guide)
 -   [MongoDB account](#mongodb-account)
 -   [Start server](#start-server)
--   [Any issues?](#any-issues?)
+-   [Any issues?](#any-issues)
 -   [License](#license)
 
 ## Installation guide
