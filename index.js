@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const router = require('./routes/routes');
 require('dotenv/config');
 
-//Gebruik van static files map public Haaaaaans
+//Gebruik van static files map public
 app.use(express.static('public'));
 
 //Laat de juiste view route zien
