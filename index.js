@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const router = require('./routes/routes');
 require('dotenv/config');
 
-//Gebruik van static files map public
+//Gebruik van static files map public Haaaaaans
 app.use(express.static('public'));
 
 //Laat de juiste view route zien
@@ -24,5 +24,5 @@ mongoose.connect(
         process.env.DB_CONNECTION,
         { useNewUrlParser: true, useUnifiedTopology: true },
         () => console.log('connected to db'),
-        app.listen(PORT)
+        app.listen(PORT) 
 );
