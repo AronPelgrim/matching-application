@@ -6,7 +6,7 @@ Welcome to my repository! Here you can find my feauture, created for a matching 
 -   [Installation guide](#installation-guide)
 -   [MongoDB account](#mongodb-account)
 -   [Start server](#start-server)
--   [Support](#any-issues?)
+-   [Any issues?](#any-issues?)
 -   [License](#license)
 
 ## Installation guide
@@ -14,36 +14,35 @@ For this project, we're going to use NodeJS, NPM and MongoDB. Please follow the 
 
 1. Clone this repository to your machine.
 ``` 
-git clone https://github.com/AronPelgrim/matching-application.git 
+$ git clone https://github.com/AronPelgrim/matching-application.git 
 ```
 
 2. Locate to the right directory.
 ``` 
-cd matching-application
+$ cd matching-application
 ```
 
 3. Install the necessary packages.
 ``` 
-npm install
+$ npm install
 ```
 
 ## MongoDB account
-MongoDB provides a clear tutorial on how to connect your MongoDB to a Node js application.  
-[Before you move on, please follow this tutorial](https://docs.mongodb.com/guides/server/drivers/)
+MongoDB provides a clear [tutorial](https://docs.mongodb.com/guides/server/drivers/) on how to connect your MongoDB to a Node js application.
 
 Okay, let's now fill in your data in the .env file.
 ``` 
 DB_CONNECTION=mongodb+srv:/Username:Password@ClusterName.h6oao.mongodb.net/CollectionName?retryWrites=true&w=majority
 ``` 
 
-On the image below, you can see the database visualisation.
+On the image below, you can find the database visualisation.
 
 ![dd](https://user-images.githubusercontent.com/74137185/110387634-30465c80-8062-11eb-97eb-2d33fdc41892.png)
 
 ## Start server
 With this command you can start the server. 
  ``` 
- npm start 
+$ npm start 
  ```
 Let's check it out! the server runs on localhost:3000.
 
