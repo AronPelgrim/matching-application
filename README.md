@@ -1,6 +1,6 @@
 # Music Matching
-[![forthebadge](https://forthebadge.com/images/badges/certified-elijah-wood.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/certified-elijah-wood.svg)](https://forthebadge.com)
 
 Welcome to my repository! Here you can find my feauture, created for a matching application named **music matching**. The concept is that the user can add a list of his favorite songs to the profile of this matching application. The user is linked to a music genre, based on this list of songs. Because of this, the user can match with people who have the same taste in music. Ofcourse it's possible that the user's taste in music changes over time. Therefore, the user can change and update the list.
 
