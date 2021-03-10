@@ -39,14 +39,13 @@ nav ul {
 
 nav li {
     list-style-type: none;
-    padding: 8px 0;
-    font-size: 0.65em;
+    padding: 7px 0;
 }
 
 nav li a {
-    padding: 0 28px;
+    padding: 0 31px;
     color: white;
-    font-size: clamp(0.7em, 3vw, 1.1em);
+    font-size: clamp(0.7em, 3vw, 0.65em);
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
@@ -59,12 +58,12 @@ section:nth-of-type(1) {
     padding: 0 4.2vw 0 4.2vw;
 }
 
-#index section:nth-of-type(1) h1 {
+section:nth-of-type(1) h1 {
     font-size: 1.4em;
     text-transform: uppercase;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
     margin-top: 15vh;
-    text-align: left;
+    text-align: center;
     color: black;
 }
 
@@ -90,15 +89,6 @@ textarea {
     bottom: 10vh;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#result section:nth-of-type(1) h1 {
-    font-size: 1.4em;
-    text-transform: uppercase;
-    margin-bottom: 0vh;
-    margin-top: 15vh;
-    text-align: center;
-    color: black;
 }
 
 #result section:nth-of-type(1) h2:first-of-type {

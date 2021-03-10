@@ -12,7 +12,7 @@
         <header><%- include('../partials/header') %></header>
         <main id = "result">
             <section>
-                <h1>Jouw favorieten</h1>
+                <h1>Favoriete nummers</h1>
                 <% for(let i=0; i < Nummers.length; i++) { %>
                   <h2><%= Nummers[i].title %></h2>
                   <p><%= Nummers[i].artist %></p>
@@ -23,6 +23,7 @@
             <footer>
                 <%- include('../partials/footer') %>
             </footer>
+            <script src="js/script.js"></script>
         </main>
     </body>
 </html>
