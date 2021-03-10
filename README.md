@@ -1,27 +1,53 @@
 # Music Matching
-Dit is mijn repository van een feauture een matching application genaamd music matching. De gebruiker kan op basis van muzieksmaak matchen met andere gebruikers.
+Welcome to my repository! Here you can find my feauture, created for a matching application named **music matching**. The concept is that the user can add a list of his favorite songs to the profile of this matching application. The user is linked to a music genre, based on this list of songs. Because of this, the user can match with people who have the same taste in music. Ofcourse it's possible that the user's taste in music changes over time. Therefore, the user can change and update the list.
 
-## Installatie
-Clone deze repository
+## Table of Contents
+
+-   [Installation guide](#installation-guide)
+-   [MongoDB account](#mongodb-account)
+-   [Database Structure](#database-structure)
+-   [Support](#support)
+-   [Roadmap](#roadmap)
+-   [Credits](#credits)
+-   [License](#license)
+
+## Installation guide
+For this project, we're going to use NodeJS, NPM and MongoDB. Please follow the instructions below.
+
+1. Clone this repository to your machine.
 ``` 
 git clone https://github.com/AronPelgrim/matching-application.git 
 ```
 
-Run deze command
+2. Locate to the right directory.
 ``` 
-npm install 
+cd matching-application
 ```
 
-## Database visualisatie
+3. Install the necessary packages.
+``` 
+npm install
+```
+
+## MongoDB account
+MongoDB provides a clear tutorial on how to connect your MongoDB to a Node js application.  
+[Before you move on, please follow this tutorial](https://docs.mongodb.com/guides/server/drivers/)
+
+Okay, let's now fill in your data in the .env file.
+``` 
+DB_CONNECTION=mongodb+srv:/Username:Password@ClusterName.h6oao.mongodb.net/CollectionName?retryWrites=true&w=majority
+``` 
+
+On the image below, you can see the database visualisation.
+
 ![dd](https://user-images.githubusercontent.com/74137185/110387634-30465c80-8062-11eb-97eb-2d33fdc41892.png)
 
-## Server
-Run deze command en start de server op 
+## Start server
+With this command you can start the server. 
  ``` 
  npm start 
  ```
- 
- Nu draait de server op localhost:3000
+Let's check it out! the server runs on localhost:3000.
  
  ## License
 [MIT](https://github.com/AronPelgrim/matching-application/blob/master/LICENSE)
