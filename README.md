@@ -5,10 +5,8 @@ Welcome to my repository! Here you can find my feauture, created for a matching 
 
 -   [Installation guide](#installation-guide)
 -   [MongoDB account](#mongodb-account)
--   [Database Structure](#database-structure)
--   [Support](#support)
--   [Roadmap](#roadmap)
--   [Credits](#credits)
+-   [Start server](#start-server)
+-   [Support](#any-issues?)
 -   [License](#license)
 
 ## Installation guide
@@ -48,7 +46,10 @@ With this command you can start the server.
  npm start 
  ```
 Let's check it out! the server runs on localhost:3000.
- 
+
+## Any issues?
+You can reach me on [this](mailto:aron.pelgrim@hva.nl) email.
+
  ## License
 [MIT](https://github.com/AronPelgrim/matching-application/blob/master/LICENSE)
  
