@@ -45,7 +45,7 @@ Cluster: Cluster0
 Database: MusicMatch 
 Collection: nummers 
 ``` 
-| Name          | Type            |
+| ``` Name ```  | ``` Type ```  |
 | ------------- |:-------------:| 
 | _id           | ObjectID      |
 | title         | String        |
