@@ -41,7 +41,14 @@ DB_CONNECTION=mongodb+srv:/Username:Password@ClusterName.h6oao.mongodb.net/Colle
 
 On the image below, you can find the database visualisation.
 
-![dd](https://user-images.githubusercontent.com/74137185/110387634-30465c80-8062-11eb-97eb-2d33fdc41892.png)
+| Tables                        | 
+| Tables                        | 
+| Tables                        | 
+| Tables                        | 
+| ------------- |:-------------:| 
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
 
 ## Start server
 With this command you can start the server. 
