@@ -40,16 +40,15 @@ DB_CONNECTION=mongodb+srv:/Username:Password@ClusterName.h6oao.mongodb.net/Colle
 ``` 
 
 On the image below, you can find the database visualisation.
-
-| Tables        | Are           |
-| ------------- |:-------------:|
-| Tables        | Are           |
-| ------------- |:-------------:|
-| Tables        | Are           |
-| ------------- |:-------------:|
-| col 3 is      | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+``` Cluster: Cluster0 ``` 
+``` Database: MusicMatch ``` 
+``` Collection: nummers ``` 
+| Type          | Name          |
+| ------------- |:-------------:| 
+| _id           | ObjectID      |
+| title         | String        |
+| artist        | String        |
+| genre         | String        |
 
 ## Start server
 With this command you can start the server. 
