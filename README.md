@@ -39,10 +39,12 @@ Okay, let's now fill in your data in the .env file.
 DB_CONNECTION=mongodb+srv:/Username:Password@ClusterName.h6oao.mongodb.net/CollectionName?retryWrites=true&w=majority
 ``` 
 
-On the image below, you can find the database visualisation.
-``` Cluster: Cluster0 ``` 
-``` Database: MusicMatch ``` 
-``` Collection: nummers ``` 
+In the structure below, you can find the database visualisation.
+``` 
+Cluster: Cluster0  
+Database: MusicMatch 
+Collection: nummers 
+``` 
 | Type          | Name          |
 | ------------- |:-------------:| 
 | _id           | ObjectID      |
