@@ -41,10 +41,10 @@ DB_CONNECTION=mongodb+srv:/Username:Password@ClusterName.h6oao.mongodb.net/Colle
 
 On the image below, you can find the database visualisation.
 
-| Tables                        | 
-| Tables                        | 
-| Tables                        | 
-| Tables                        | 
+| Tables        | Are           | 
+| Tables        | Are           | 
+| Tables        | Are           | 
+| Tables        | Are           | 
 | ------------- |:-------------:| 
 | col 3 is      | right-aligned |
 | col 2 is      | centered      |
