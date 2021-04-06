@@ -9,21 +9,19 @@
         <title>Document</title>
     </head>
     <body>
-        <header><%- include('../partials/header') %></header>
-        <main id = "result">
-            <section>
-                <h1>Favoriete nummers</h1>
-                <% for(let i=0; i < Nummers.length; i++) { %>
-                  <h2><%= Nummers[i].title %></h2>
-                  <p><%= Nummers[i].artist %></p>
-                  <p><%= Nummers[i].genre %></p>
-                  <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">	💔</a>
-             <% } %>
-            </section>
-            <footer>
-                <%- include('../partials/footer') %>
-            </footer>
-            <script src="js/script.js"></script>
-        </main>
+        <%- include('../partials/header') %>
+            <main id = "result">
+                <section>
+                    <h1>Favoriete nummers</h1>
+                    <% for(let i=0; i < Nummers.length; i++) { %>
+                    <h2><%= Nummers[i].title %></h2>
+                    <p><%= Nummers[i].artist %></p>
+                    <p><%= Nummers[i].genre %></p>
+                    <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">	💔</a>
+                <% } %>
+                </section>
+                <script src="js/script.js"></script>
+            </main>
+        <%- include('../partials/footer') %>
     </body>
 </html>
