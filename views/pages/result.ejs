@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-        <title>Document</title>
-    </head>
+    <%- include('../partials/head') %>
     <body>
         <%- include('../partials/header') %>
-            <main id="result">
-                <section>
-                    <h1>Favoriete nummers</h1>
-                    <% for(let i=0; i < Nummers.length; i++) { %>
-                    <h2><%= Nummers[i].title %></h2>
-                    <p><%= Nummers[i].artist %></p>
-                    <p><%= Nummers[i].genre %></p>
-                    <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">	💔</a>
+        <main id="result">
+            <section>
+                <h1>Favoriete nummers</h1>
+                <% for(let i=0; i < Nummers.length; i++) { %>
+                <h2><%= Nummers[i].title %></h2>
+                <p><%= Nummers[i].artist %></p>
+                <p><%= Nummers[i].genre %></p>
+                
+                <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">💔</a>
                 <% } %>
-                </section>
-                <script src="js/script.js"></script>
-            </main>
+            </section>
+        </main>
         <%- include('../partials/footer') %>
     </body>
 </html>

@@ -9,9 +9,14 @@ router.use(bodyParser.urlencoded({ extended: true }));
 
 router.use(bodyParser.json());
 
-//Route aanvraag, die response indes.ejs weergeeft
+//Route aanvraag, die response index.ejs weergeeft
 router.get('', (req, res) => {
         res.render('index');
+});
+
+//Route aanvraag, die response matching.ejs weergeeft
+router.get('/matching', (req, res) => {
+        res.render('matching');
 });
 
 //Route aanvraag, die response result.ejs weergeeft met Nummers schema
