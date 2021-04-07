@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
+<%- include('../partials/head') %>
+
     <body>
         <%- include('../partials/header') %>
-        <main id="index">
-            <section>
-                <h1>Nummer toevoegen</h1>
-                <form method="POST" action="/index">
-                    <input type="text" id="title" name="title" placeholder="Titel" required />
-                    <input type="text" id="artist" name="artist" placeholder="Artiest" required />
-                    <input type="text" id="genre" name="genre" placeholder="Genre" required />
-                    <input type="submit" value="Toevoegen" />
-                </form>
-            </section>
-        </main>
-        <%- include('../partials/footer') %>
+            <main id="index">
+                <section>
+                    <h1>Nummer toevoegen</h1>
+                    <form method="POST" action="/index">
+                        <input type="text" id="title" name="title" placeholder="Titel" required />
+                        <input type="text" id="artist" name="artist" placeholder="Artiest" required />
+                        <input type="text" id="genre" name="genre" placeholder="Genre" required />
+                        <input type="submit" value="Toevoegen" />
+                    </form>
+                </section>
+            </main>
+            <%- include('../partials/footer') %>
     </body>
+
 </html>

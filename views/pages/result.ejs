@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
+<%- include('../partials/head') %>
+
     <body>
         <%- include('../partials/header') %>
-        <main id="result">
-            <section>
-                <h1>Favoriete nummers</h1>
-                <% for(let i=0; i < Nummers.length; i++) { %>
-                <h2><%= Nummers[i].title %></h2>
-                <p><%= Nummers[i].artist %></p>
-                <p><%= Nummers[i].genre %></p>
-                
-                <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">💔</a>
-                <% } %>
-            </section>
-        </main>
-        <%- include('../partials/footer') %>
+            <main id="result">
+                <section>
+                    <h1>Favoriete nummers</h1>
+                    <% for(let i=0; i < Nummers.length; i++) { %>
+                        <h2>
+                            <%= Nummers[i].title %>
+                        </h2>
+                        <p>
+                            <%= Nummers[i].artist %>
+                        </p>
+                        <p>
+                            <%= Nummers[i].genre %>
+                        </p>
+
+                        <a href="/result/<%= Nummers[i]._id%>/delete" class="Delete">💔</a>
+                        <% } %>
+                </section>
+            </main>
+            <%- include('../partials/footer') %>
     </body>
+
 </html>
