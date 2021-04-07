@@ -41,7 +41,7 @@ router.post('/index', (req, res) => {
      });
 });
 
-// Error 404 met gebruik van onbestaande route
+// Error 404 bij gebruik van onbestaande route
 router.use((req, res) => {
      res.status(404).send('Sorry, deze pagina bestaat niet');
 });
