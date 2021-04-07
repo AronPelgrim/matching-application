@@ -8,21 +8,21 @@ const mongoose = require('mongoose');
 const router = require('./routes/routes');
 require('dotenv/config');
 
-//Gebruik van static files map public
+// Gebruik van static files map public
 app.use(express.static('public'));
 
-//Laat de juiste view route zien
+// Laat de juiste view route zien
 app.set('views', './views/pages');
-//Gebruik van EJS
+// Gebruik van EJS
 app.set('view engine', 'ejs');
 
-//Gebruik router van router.js bestand
+// Gebruik router van router.js bestand
 app.use(router);
 
-//Database connectie
+// Database connectie
 mongoose.connect(
-        process.env.DB_CONNECTION,
-        { useNewUrlParser: true, useUnifiedTopology: true },
-        () => console.log('connected to db'),
-        app.listen(PORT) 
+     process.env.DB_CONNECTION,
+     { useNewUrlParser: true, useUnifiedTopology: true },
+     () => console.log('connected to db'),
+     app.listen(PORT)
 );
