@@ -5,6 +5,8 @@
 
 Welcome to my repository! Here you can find my feauture, created for a matching application named **music matching**. The concept is that the user can add a list of his favorite songs to the profile of this matching application. The user is linked to a music genre, based on this list of songs. Because of this, the user can match with people who have the same taste in music. Ofcourse it's possible that the user's taste in music changes over time. Therefore, the user can change and update the list.
 
+![Knipsel](https://user-images.githubusercontent.com/74137185/113873923-90d9ce00-97b5-11eb-90e7-aa1c74dc1ab3.JPG)
+
 ## Table of Contents
 
 -   [Installation guide](#installation-guide)
